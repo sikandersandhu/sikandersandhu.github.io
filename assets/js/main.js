@@ -247,52 +247,6 @@
       }, false);
     });
 
-    /**
-     * Function to handle the form submission
-    */
-
-    // // Handle the form submission using JavaScript
-    // document.getElementById('contact-form').addEventListener('submit', function(event) {
-    //   event.preventDefault();  // Prevent the default form submission
-
-    //   // Show loading message
-    //   document.querySelector('.loading').style.display = 'block';
-
-    //   // Hide error and success messages initially
-    //   document.querySelector('.error-message').style.display = 'none';
-    //   document.querySelector('.sent-message').style.display = 'none';
-
-    //   // Form data
-    //   const formData = new FormData(this);
-
-    //   // Submit the form via fetch to Formspree
-    //   fetch(this.action, {  // Use the action attribute of the form (Formspree URL)
-    //     method: 'POST',
-    //     body: formData
-    //   })
-    //   .then(response => response.json())  // Parse the response as JSON
-    //   .then(data => {
-    //     if (data.ok) {
-    //       // Show sent message
-    //       document.querySelector('.sent-message').style.display = 'block';
-
-    //       // Redirect to the URL in the "next" field of the response
-    //       window.location.href = data.next;  // This will use the "next" URL in the Formspree response
-    //     } else {
-    //       // Show error message if submission fails
-    //       document.querySelector('.error-message').style.display = 'block';
-    //     }
-    //   })
-    //   .catch(error => {
-    //     // Show error message if there's an issue with the request
-    //     document.querySelector('.error-message').style.display = 'block';
-    //   })
-    //   .finally(() => {
-    //     // Hide the loading message after form submission is complete
-    //     document.querySelector('.loading').style.display = 'none';
-    //   });
-    // });
-
   });
 
 })();
